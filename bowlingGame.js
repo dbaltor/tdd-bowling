@@ -11,6 +11,7 @@ class BowlingGame {
     this.frameRoll = 0;
     this.bonus1 = 0;
     this.bonus2 = 0;
+    // Uncomment to keep all rolls
     // this.currentRoll = 0;
     // this.rolls = [];
   }
@@ -47,6 +48,7 @@ class BowlingGame {
     }
     // Validate input and game still running
     if (!this.finished && this.frameScore + pins <= 10) {
+      // Uncomment to keep all rolls
       // this.rolls[this.currentRoll++] = pins;
      
       if (this.frame <= 10) {
