@@ -16,7 +16,7 @@ class BowlingGame {
     // this.rolls = [];
   }
   
-  getFinished() {
+  isFinished() {
     return this.finished;
   }
 

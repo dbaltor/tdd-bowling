@@ -11,7 +11,7 @@ test("assert the game is 10 frames", () => {
   let game = new BowlingGame(); 
   // When
   // Then
-  expect(game.getFinished()).toBe(false);
+  expect(game.isFinished()).toBe(false);
   // When
   game.roll(0); game.roll(0); 
   game.roll(0); game.roll(0); 
@@ -23,11 +23,11 @@ test("assert the game is 10 frames", () => {
   game.roll(0); game.roll(0); 
   game.roll(0); game.roll(0); 
   // Then
-  expect(game.getFinished()).toBe(false);
+  expect(game.isFinished()).toBe(false);
   // When
   game.roll(0); game.roll(0);
   // Then
-  expect(game.getFinished()).toBe(true);
+  expect(game.isFinished()).toBe(true);
 });
 
 
